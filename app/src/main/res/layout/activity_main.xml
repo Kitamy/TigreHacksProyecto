@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutsubmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnMisiones"
+            android:onClick="BotonMision"
+            android:layout_width="83dp"
+            android:layout_height="94dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/goal" />
+
+        <ImageButton
+            android:id="@+id/btnRecompensas"
+            android:onClick="BotonRecompensa"
+            android:layout_width="83dp"
+            android:layout_height="94dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/trophy" />
+
+        <ImageButton
+            android:id="@+id/btnScore"
+            android:onClick="BotonRanking"
+            android:layout_width="45dp"
+            android:layout_height="94dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/podium" />
+
+        <ImageButton
+            android:id="@+id/btnClima"
+            android:onClick="BotonContaminacion"
+            android:layout_width="83dp"
+            android:layout_height="94dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/contamination" />
+
+        <ImageButton
+            android:id="@+id/btnTienda"
+            android:onClick="BotonTienda"
+            android:layout_width="83dp"
+            android:layout_height="94dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/coins" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="587dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageVP"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+</RelativeLayout>
